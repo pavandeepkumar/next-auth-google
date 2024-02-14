@@ -50,7 +50,7 @@ export const authConfig = {
   ],
 };
 
-export async function loginIsRequiredServer() {
+export async function LoginIsRequiredServer() {
   const session = await getServerSession(authConfig);
   if (!session) return redirect("/");
 }
